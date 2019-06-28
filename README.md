@@ -27,6 +27,7 @@ A simple application that loads the Safe Routes to School map that allows simple
 ### To update the map data
 The GeoJSON files from SFMTA/SFGIS were uploaded to Mapbox studio and converted into vector tilesets. These tilesets are referenced in the map style and updating them here wll update the displayed map.
 
+- Ensure the updated GeoJSON uses the WGS84 coordinate system
 - Login to [Mapbox Studio](https://studio.mapbox.com/) with the `safe-routes-to-school` username and password
 - Select `Tilesets`from the Top menu bar
 - Scroll to and select the tileset that you want to update
