@@ -216,12 +216,22 @@ class Main extends React.Component {
     const { props, state } = this;
     return (
       <div id="main">
-        <div id="formArea" className="grid px24 pt24">
-          <div className="col col--3 px24">
+        <div id="formArea" className="grid px24 py24 mb36 border-b border--gray-light" style={{boxShadow: "rgba(0, 0, 0, 0.3) 0px 5px 8px -8px"}}>
+          <h1 className="mb24 px24 txt-h1 mb12">SFMTA Safe Routes to School Map Exporter</h1>
+          <div className="col col--12 mt12 ml24">
+            <p className="ml12">Use the form below to set up your Safe Routes to School map:</p>
+            <ol className="my12 ml36 txt-ol col col--12">
+              <li className="txt-li">Select a school from the dropdown.</li>
+              <li className="txt-li">Toggle transit, bicycle, or walk radius layers on and off (if desired).</li>
+              <li className="txt-li">Click the "Export map" button to download a high-resolution image of the map.</li>
+            </ol>
+            <p className="txt-em mb24">Note: the legend will not be included in the export. If you would like to include a legend, you can print to PDF or take a screenshot.</p>
+          </div>
+          <div className="col col--6 px24">
             <ControlSelect
               id="schoolSelect"
               label="School"
-              themeControlSelectContainer="py24"
+              themeControlSelectContainer="pt3"
               onChange={this.onChangeSchool}
               value={this.state.formData.school}
               options={this.schoolsList}
@@ -235,7 +245,7 @@ class Main extends React.Component {
               onChange={this.onChangeTitle}
             />
           </div>
-          <div className="col col--3 px24 pt24">
+          <div className="col col--6 px24 pt24">
             <ControlSwitch
               id="toggleLayerBike"
               label="Bike route and bikeshare stations"
@@ -255,15 +265,15 @@ class Main extends React.Component {
               value={this.state.showWalkingIsochrone}
             />
           </div>
-          <div className="my24  align-center ">
+          <div className="ml24 my36  align-center ">
             <Button onClick={this.exportMap} variant="secondary">
               Export map
             </Button>
           </div>
         </div>
-        <h1 style={{ marginTop: '29px' }} className="mb12  px24 txt-h1">
+        <h2 className="mb12  px24 txt-h2">
           {this.state.docTitleText}
-        </h1>
+        </h2>
         <div id="mapArea" className="grid px12">
           <div
             className="relative"

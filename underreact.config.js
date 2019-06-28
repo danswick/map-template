@@ -4,7 +4,7 @@ const html = require('./html');
 const path = require('path');
 
 module.exports = {
-  siteBasePath: '/map-template',
+  siteBasePath: '/',
   outputDirectory: path.join(__dirname, '/docs'),
   htmlSource: html()
 };
