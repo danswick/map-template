@@ -43,13 +43,11 @@ updating them here wll update the displayed map.
 - On the tileset page, click `Replace` on the right column and select the
   updated version of the GeoJSON file
 
-The raw GeoJSON data going into these vector tilesets is in [`data/`](data/), as
-well as some notes on corrections and normalizations we made. Replacement
-datasets should have the GeoJSON feature properties as the data within this
-directory, otherwise the supporting map styles will break. For example, if you
-update the school points data, compare your new GeoJSON file to
-`data/sfusd_school_pt.wgs84.json` file in this repo and verify that each
-`feature` has the same set of `properties`.
+The raw GeoJSON data going into these vector tilesets is in [`data/`](data/),
+and includes notes on data sources, corrections, and normalizations we
+made. Note that the map style depends on the GeoJSON properties, so the map
+style might break if the new data is missing any properties that exist in the
+old data.
 
 ## Developing the Application
 
