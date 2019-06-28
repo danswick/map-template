@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import mergeImages from "merge-images";
 
 import mapboxAttribution from "./attribution/attribution.png";
-import mapboxLogo from "./attribution/mapbox-logo-color.png";
+import mapboxLogo from "./attribution/mapboxgl-ctrl-logo.png";
 
 // Saves a print-resolution map to disk
 // Returns a promise that resolves once save is complete
@@ -61,13 +61,13 @@ export function printMap({ map, dimensions = [792, 936], filename = "map" }) {
             },
             {
               src: mapboxLogo,
-              x: 20,
-              y: canvas.height - 75
+              x: 10,
+              y: canvas.height - 31
             },
             {
               src: mapboxAttribution,
-              x: canvas.width - 430,
-              y: canvas.height - 75
+              x: canvas.width - 215,
+              y: canvas.height - 31
             }
           ],
           {
