@@ -42,7 +42,7 @@ system][wgs84] required by Mapbox Studio.
   * Tileset ID: `safe-routes-to-school.dn51zedy`
   * Notes: GeoJSON file extracted from this GIS spreadsheet file.
 - Bikeshare Stations
-  * File: `sfmta_gis_20190621_1.gdb.zip`
+  * File: KML file `bikeshare_stations.zip` (from `sfmta_gis_20190621_1.gdb.zip`)
   * Source: Provided by SFMTA
   * Tileset ID: `safe-routes-to-school.cnjupcas`
   * Notes: GeoJSON file extracted from this GIS spreadsheet file.
@@ -70,7 +70,7 @@ system][wgs84] required by Mapbox Studio.
   * Source: Provided by Mapbox Streets v8 tileset
   * Tileset ID: n/a
 - Off Street Parking
-  * File: `sfmta_gis_20190621_1.gdb.zip`
+  * File: KML file `offstreetparking.zip` (from `sfmta_gis_20190621_1.gdb.zip`)
   * Source: Provided by SFMTA
   * Tileset ID: `safe-routes-to-school.6tgc1l8w`
   * Notes: GeoJSON file extracted from this GIS spreadsheet file.
