@@ -7,15 +7,18 @@ import mapboxLogo from "./attribution/mapboxgl-ctrl-logo.png";
 
 // Saves a print-resolution map to disk
 // Returns a promise that resolves once save is complete
-export function printMap({ map, dimensions = [792, 936], filename = "map" }) {
+// dimensions - inches of map at 300 ppi
+export function printMap({ map, dimensions = [11, 13], filename = "map" }) {
   return new Promise((resolve, reject) => {
     const screenPixelRatio = window.devicePixelRatio;
-    const screenCanvas = map.getCanvas();
-    const screenDimensions = [screenCanvas.width / screenPixelRatio, screenCanvas.height / screenPixelRatio];
-    const printPixelRatio = dimensions[0] / screenDimensions[0];
+    const screenDimensions = [ dimensions[0] * 96, dimensions[1] * 96];
+
+    //Taken from : https://github.com/mapbox/studio/blob/4163d1cbefbbdc4544f88fda8c96c5ae08253e75/src/util/ui_util/generate_map_as_image.js#L33-L41
+    const printPixelRatio = 300 / 96; //-> 300 ppi
 
     // Mapbox determines the pixel density for rendering from the device pixel ratio.
     // We want to render the same-sized map with a higher pixel density.
+
     Object.defineProperty(window, "devicePixelRatio", {
       get: () => printPixelRatio
     });
