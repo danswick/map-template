@@ -79,8 +79,6 @@ data in June 2019, we made some fixes to the underlying data.
       query for features where `speedlimit=15`, then exported just those
       features.
 
-which are noted in [this spreadsheet][notes].
-
 [wgs84]: https://spatialreference.org/ref/epsg/wgs-84/
 [tileset]: https://docs.mapbox.com/studio-manual/reference/tilesets/#what-is-a-tileset
 
