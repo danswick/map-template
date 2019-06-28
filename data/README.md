@@ -37,7 +37,7 @@ system][wgs84] required by Mapbox Studio.
   * Provided by Mapbox Streets v8 tileset
   * Tileset ID: n/a
 - Bikeways
-  * File: `sfmta_gis_20190621_1.gdb.zip`
+  * File: `bikeways.zip` (from `sfmta_gis_20190621_1.gdb.zip`)
   * Source: Provided by SFMTA
   * Tileset ID: `safe-routes-to-school.dn51zedy`
   * Notes: GeoJSON file extracted from this GIS spreadsheet file.
@@ -83,7 +83,7 @@ system][wgs84] required by Mapbox Studio.
   * Source: Provided by SFMTA
   * Tileset ID: `safe-routes-to-school.4ykokoxq`
 - School Speed Zones
-  * File: TODO
+  * File: `school_speed_zones.zip`
   * Source: From https://data.sfgov.org/.
   * Tileset ID: `safe-routes-to-school.6njoirj3`
   * Notes:
@@ -91,6 +91,7 @@ system][wgs84] required by Mapbox Studio.
       https://data.sfgov.org/Transportation/Speed-Limits/3t7b-gebn. Used QGIS to
       query for features where `speedlimit=15`, then exported just those
       features.
+
 
 [wgs84]: https://spatialreference.org/ref/epsg/wgs-84/
 [tileset]: https://docs.mapbox.com/studio-manual/reference/tilesets/#what-is-a-tileset
