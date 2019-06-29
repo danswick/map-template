@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import BikeIcon from '../../icons/bicycle-share-15.svg';
+import ParkingIcon from '../../icons/parking-15.svg';
+import CrossingGuardIcon from '../../icons/police-15.svg';
 
 export default class MapLegend extends React.PureComponent {
   constructor(props) {
@@ -33,6 +36,15 @@ export default class MapLegend extends React.PureComponent {
             return this.renderItem(layer);
           })
         }
+      <div className="legend-row mb6">
+        <span className="inline-block w24 h18 mr12"><BikeIcon /></span><span>Bike share station</span>
+      </div>
+      <div className="legend-row mb6">
+        <span className="inline-block w24 h18 mr12"><ParkingIcon /></span><span>Off-street parking</span>
+      </div>
+      <div className="legend-row mb6">
+        <span className="inline-block w24 h18 mr12"><CrossingGuardIcon /></span><span>Crossing guard</span>
+      </div>
       </div>
     )
   }

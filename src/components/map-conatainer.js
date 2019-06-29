@@ -53,7 +53,7 @@ export default class MapContainer extends React.PureComponent {
       });
 
       this.map.addLayer({
-        'id': 'isoLayer',
+        'id': '10-min walk radius',
         'type': 'fill',
         // Use "iso" as the data source for this layer
         'source': 'iso',
@@ -61,7 +61,9 @@ export default class MapContainer extends React.PureComponent {
         'paint': {
           // The fill color for the layer is set to a light purple
           'fill-color': '#a3a3c2',
-          'fill-opacity': 0.3
+          'fill-opacity': 0.4,
+          'fill-outline-color': '#555',
+          'fill-antialias': true
         }
       }, "poi-label");
 

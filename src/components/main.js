@@ -22,7 +22,8 @@ class Main extends React.Component {
       'SFMTA metro routes',
       'SFMTA bus routes',
       'SFUSD School Lands',
-      'School Speed Zones'
+      'School Speed Zones',
+      '10-min walk radius'
     ];
 
     this.state = {
@@ -218,14 +219,14 @@ class Main extends React.Component {
       <div id="main">
         <div id="formArea" className="grid px24 py24 mb36 border-b border--gray-light" style={{boxShadow: "rgba(0, 0, 0, 0.3) 0px 5px 8px -8px"}}>
           <h1 className="mb24 px24 txt-h1 mb12">SFMTA Safe Routes to School Map Exporter</h1>
-          <div className="col col--12 mt12 ml24">
+          <div className="col col--12 mt12 ml24 mb36">
             <p className="ml12">Use the form below to set up your Safe Routes to School map:</p>
             <ol className="my12 ml36 txt-ol col col--12">
               <li className="txt-li">Select a school from the dropdown.</li>
               <li className="txt-li">Toggle transit, bicycle, or walk radius layers on and off (if desired).</li>
               <li className="txt-li">Click the "Export map" button to download a high-resolution image of the map.</li>
             </ol>
-            <p className="txt-em mb24">Note: the legend will not be included in the export. If you would like to include a legend, you can print to PDF or take a screenshot.</p>
+            <p className="txt-em">Note: the legend will not be included in the export. If you would like to include a legend, you can print to PDF or take a screenshot.</p>
           </div>
           <div className="col col--6 px24">
             <ControlSelect
@@ -260,7 +261,7 @@ class Main extends React.Component {
             />
             <ControlSwitch
               id="toggleWalkingIsochrone"
-              label="10-min Walk Radius"
+              label="10-min walk radius"
               onChange={this.onToggleWalkingIsochrone}
               value={this.state.showWalkingIsochrone}
             />
@@ -280,7 +281,7 @@ class Main extends React.Component {
             style={{ display: 'block', height: '936px', width: '792px' }}
           >
             {this.renderMap()}
-            <div className="bg-white px12 pt12 pb36 absolute bottom left">
+            <div className="bg-white px12 pt12 absolute bottom left">
               {this.state.legendComponent}
             </div>
           </div>
