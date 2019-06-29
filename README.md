@@ -64,4 +64,6 @@ Development dependencies:
 
 ## Hosting Application
 
-TODO(danswick)
+Running `npm run build` will generate static files for the site and will output them to the `docs` directory (this is just a handy default that takes advantage of GitHub Pages' ability to deploy files from the `docs` directory of a repo's master branch. If you've forked this repo, you can change the `outputDirectory` in `underreact.config.js` to whatever you like). 
+
+Currently, this repo expects files will life at a `/map-template` basepath and will generate an `index.html` that corresponds. You will probably need to change this value to correspond to wherever your files will end up. A more manual option is, from the bundled `index.html` file, to change all of the filepaths to be relative. 
