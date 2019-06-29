@@ -39,7 +39,8 @@ export default class MapContainer extends React.PureComponent {
       center,
       zoom,
       maxZoom: 16,
-      minZoom: 11
+      minZoom: 11,
+      logoPosition: "bottom-right"
     });
 
     this.map.on('load', ()=> {
