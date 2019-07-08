@@ -13,10 +13,11 @@ for print.
   features that are in range
 - Switch on/off the Bicycling related data layers
   * This switch toggles the bicycle paths and bikeshare stations
-- Switch on/off the Transit related data lauers
+- Switch on/off the Transit related data layers
   * This switch toggles MUNI routes and stops, and BART stops
 - Hit the `Export` button
   * This downloads a map in a size fit for printing a 11in x 13in map at 72 dpi.
+- Note: The export is the map only and does not include a title or legend. If you want a legend, we recommend either recreating the legend in a graphics software tool or taking a screenshot of the legend from the application.
 
 ## Updating the Backing Data
 
