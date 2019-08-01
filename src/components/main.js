@@ -23,7 +23,7 @@ class Main extends React.Component {
       'SFMTA bus routes',
       'SFUSD School Lands',
       'School Speed Zones',
-      '10-min walk radius'
+      'Suggested walking distance'
     ];
 
     this.state = {
@@ -261,7 +261,7 @@ class Main extends React.Component {
             />
             <ControlSwitch
               id="toggleWalkingIsochrone"
-              label="10-min walk radius"
+              label="10 minute walk radius"
               onChange={this.onToggleWalkingIsochrone}
               value={this.state.showWalkingIsochrone}
             />

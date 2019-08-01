@@ -54,7 +54,7 @@ export default class MapContainer extends React.PureComponent {
       });
 
       this.map.addLayer({
-        'id': '10-min walk radius',
+        'id': 'Suggested walking distance',
         'type': 'fill',
         // Use "iso" as the data source for this layer
         'source': 'iso',
@@ -105,7 +105,7 @@ export default class MapContainer extends React.PureComponent {
     // Create variables to use in getIso()
     const urlBase = 'https://api.mapbox.com/isochrone/v1/mapbox/';
     const profile = 'walking';
-    const minutes = 5;
+    const minutes = 10;
 
     const query = `${urlBase}${profile}/${center}?contours_minutes=${minutes}&polygons=true&access_token=${this.props.mapboxAccessToken}`;
 
