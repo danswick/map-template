@@ -6,7 +6,7 @@ for print.
 
 ## Using the Application
 
-- Navigate to <URL>
+- Navigate to <https://labs.mapbox.com/community/map-template/>
 - Use the school selector drop-down to select the school for which you want to
   review and print the map
 - Change the zoom and center of the map until you are satisfied with all the
