@@ -15,6 +15,8 @@ for print.
   * This switch toggles the bicycle paths and bikeshare stations
 - Switch on/off the Transit related data layers
   * This switch toggles MUNI routes and stops, and BART stops
+- Switch on/off the 10 minute walking distance isochrone
+  * This switch toggles the light blue polygon of estimated walking time, set to 10 minutes walking using Mapbox's isochrone tool.
 - Hit the `Export` button
   * This downloads a map in a size fit for printing a 11in x 13in map at 72 dpi.
 - Note: The export is the map only and does not include a title or legend. If you want a legend, we recommend either recreating the legend in a graphics software tool or taking a screenshot of the legend from the application.
